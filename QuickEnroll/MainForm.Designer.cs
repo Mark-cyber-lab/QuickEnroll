@@ -39,13 +39,14 @@
             mainpanel = new Panel();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
-            button6 = new Button();
-            panel4 = new Panel();
+            pictureBox2 = new PictureBox();
             label1 = new Label();
+            panel4 = new Panel();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -119,12 +120,12 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.Honeydew;
+            panel3.BackColor = Color.FloralWhite;
             panel3.Controls.Add(mainpanel);
             panel3.Controls.Add(pictureBox1);
             panel3.Location = new Point(0, -1);
             panel3.Name = "panel3";
-            panel3.Size = new Size(232, 126);
+            panel3.Size = new Size(232, 93);
             panel3.TabIndex = 2;
             // 
             // mainpanel
@@ -147,8 +148,8 @@
             // panel1
             // 
             panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button6);
             panel1.Controls.Add(panel3);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
@@ -156,25 +157,17 @@
             panel1.Size = new Size(1228, 92);
             panel1.TabIndex = 0;
             // 
-            // button6
+            // pictureBox2
             // 
-            button6.BackColor = Color.Red;
-            button6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = SystemColors.ButtonFace;
-            button6.Location = new Point(1104, 27);
-            button6.Name = "button6";
-            button6.Size = new Size(98, 41);
-            button6.TabIndex = 7;
-            button6.Text = "Exit";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
-            // panel4
-            // 
-            panel4.Location = new Point(233, 92);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(995, 629);
-            panel4.TabIndex = 2;
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(1134, 25);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(55, 46);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 31;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label1
             // 
@@ -186,6 +179,14 @@
             label1.Size = new Size(555, 62);
             label1.TabIndex = 30;
             label1.Text = "Enrollment Management";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FloralWhite;
+            panel4.Location = new Point(233, 92);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(995, 629);
+            panel4.TabIndex = 2;
             // 
             // MainForm
             // 
@@ -204,6 +205,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -219,8 +221,8 @@
         private Panel mainpanel;
         private PictureBox pictureBox1;
         private Panel panel1;
-        private Button button6;
         private Panel panel4;
         private Label label1;
+        private PictureBox pictureBox2;
     }
 }

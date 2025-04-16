@@ -346,6 +346,7 @@ namespace QuickEnroll
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FloralWhite;
             ClientSize = new Size(1027, 737);
             Controls.Add(comboBox5);
             Controls.Add(label15);

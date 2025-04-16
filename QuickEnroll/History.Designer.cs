@@ -47,6 +47,7 @@
             // panel1
             // 
             panel1.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            panel1.BackColor = Color.FloralWhite;
             panel1.Controls.Add(label1);
             panel1.Controls.Add(dateTimePicker2);
             panel1.Controls.Add(label5);
